@@ -1,177 +1,174 @@
-/* Reset Css */
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border: 0;
 }
 
-.page {
-  width: 750px;
-  height: 1930px;
-  margin: auto;
+.page{
+width: 750px;
+margin: auto;
+height: 1930px;
 }
 
-body, input, label, span{
-  font-family: "poppins";
+body, input, span, label{
+  font-family: 'Poppins';
+
 }
 
-body {
-  background: #e5e5e5;
+body{
+  background: #E5E5E5;
 }
 
-body::before {
+body::before{
   content: "";
+  position: absolute;
   width: 100%;
   height: 436px;
+  left: 0px;
+  top: 0px;
 
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #535971;
+  background: #535971;  
   z-index: -1;
 }
 
 header {
-  width: 417px;
-  margin-top: 140px;
+width: 417px;
+margin-top: 140px;
 }
 
-header h1 {
-  font-family: "Staatliches";
-  font-size: 48px;
-  font-weight: normal;
-  line-height: auto;
-  color: white;
+header h1{
+
+font-family: 'Staatliches';
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+
+color: #FFFFFF;
+
 }
+
 
 header p {
-  font-size: 20px;
-  font-weight: normal;
-  height: auto;
-  color: white;
-  margin-top: 18px;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+
+margin-top: 18px;
+
+color: #FFFFFF;
+
 }
 
 form {
-  background: white;
-  height: 1244px;
-  margin-top: 58px;
-  border-radius: 20px 20px 0 0;
+width: 750px;
+height: 1084px;
 
-  padding: 64px;
+background: #FFFFFF;
+
+margin-top: 58px;
+border-radius: 20px 20px 0px 0px;
+padding: 64px;
 }
+
 fieldset{
 border: none;
-margin-top: 16px;
-
-}
-#info-mentor{
-  border: none;
-  margin-top: 30px;
-  
+margin-bottom: 16px;
 }
 
-.fildset-wrapper{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+fieldset legend{
+font-family: 'Staatliches';
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+
+color: #535971;
+
+border-bottom: 1px solid #E6E6F0;
+padding-bottom: 8px;
+margin-bottom: 20px;
 }
 
-fieldset legend {
-  font-family: "Staatliches";
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
 
-  color: #535971;
-
-  width: 100%;
-  border-bottom: 1px solid #e6e6f0;
-  padding-bottom: 16px;
-  margin-bottom: 32px;
-}
-
-fieldset h2 {
-  font-family: "Staatliches";
-  font-weight: 400;
+fieldset h2{
+  font-family: 'Staatliches';
   font-size: 20px;
+  font-weight: 400;
   line-height: 34px;
 
   color: #535971;
 
-  width: 100%;
-  padding-bottom: 16px;
-  margin-bottom: 11px;
 }
+.fieldset-wrapper label{
 
-fieldset span{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  margin-left: 9px;
-
-  color: #C1BCCC;
-}
-
-.input-info{
-  display: flex;
-  flex-direction: row;
-}
-
-.input-info label{
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  margin-right: 279px;
-  
-  color: #4E4958;
-  
-}
-
-
-.input-info input {
-  box-sizing: border-box;
-  width: 300px;
-  height: 56px;
-  margin-top: 8px;
-  padding: 0 24px;
-  margin-right: 22px;
-  
-  background: #fafafc;
-  border: 1px solid #e6e6f0;
-  border-radius: 8px;
-  
-  color: #76757b;
-}
-
-.input-wrapper{
-  display: flex;
-  flex-direction: column;
-}
-
-.input-wrapper label{
-font-family: 'Poppins';
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
-margin-right: 279px;
 
 color: #4E4958;
 
 }
 
-.input-wrapper input {
-  box-sizing: border-box;
+.fieldset-wrapper legend{
+  padding-top: 10px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.input-wrapper input{
   width: 100%;
   height: 56px;
-  margin-top: 8px;
-  padding: 0 24px;
-
-  background: #fafafc;
-  border: 1px solid #e6e6f0;
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
   border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 8px;
 
-  color: #76757b;
+}
+
+.col-2{
+display: flex;
+gap: 22px;
+}
+
+.col-3{
+display: flex;
+gap: 10px;
+}
+
+.col-3 > div:nth-child(1){
+width: 300px;
+margin-right: 32px;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3) {
+    width: 140px; 
+    margin-right: 10px;
+}
+
+.col-2 input {
+  width: 300px;
+  height: 56px;
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding-left: 12px;
+  margin-top: 8px;
+}
+
+.input-wrapper span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  
+  color: #767579;
+  padding-left: 9px;
 }
