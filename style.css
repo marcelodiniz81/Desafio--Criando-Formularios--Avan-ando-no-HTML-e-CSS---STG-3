@@ -207,5 +207,9 @@ footer{
 
 }
 
+input:invalid{
+  border: 1px solid #e70936;
+}
+
 
 

@@ -23,7 +23,7 @@
       <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
     
-    <form>
+    <form id="my-form">
       <!-- Informações Pessoais -->
       <fieldset>
         <div class="fieldset-wrapper">
@@ -32,22 +32,27 @@
           <div class="col-2">
             <div class="input-wrapper">
               <label for="event-title">Nome</label>
-              <input type="text" id="event-title">
+              <input type="text" id="event-title"
+              required/>
             </div>
             <div class="input-wrapper">
               <label for="event-title">Sobrenome</label>
-              <input type="text" id="event-title">
+              <input type="text" id="event-title"
+              required/>
             </div>
             
           </div>
           <div class="input-wrapper">
             <label for="event-email">Email <span>(digite um email válido)</span></label>
-            <input type="email" id="event-email">
+            <input type="email" id="event-email" placeholder="Digite seu email"
+            required/>
           </div>
 
           <div class="input-wrapper">
             <label for="event-password">Senha<span>(mínimo de 6 caracteres)</span></label>
-            <input type="password" id="event-password" placeholder="Digite sua senha">
+            <input type="password" id="event-password" placeholder="Digite sua senha"
+            required
+            minlength="6"/>
           </div>
         </fieldset>
           <fieldset>
@@ -100,7 +105,7 @@
 
   </form>
   <footer>
-    <input class="button" type="submit" value="SALVAR">
+    <input class="button" type="submit" form="my-form" value="SALVAR">
   </footer>
   </div>
 </body>
