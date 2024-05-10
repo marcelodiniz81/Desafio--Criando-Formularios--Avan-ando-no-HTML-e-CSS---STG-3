@@ -172,3 +172,40 @@ margin-right: 32px;
   color: #767579;
   padding-left: 9px;
 }
+
+footer{
+  background: #535971;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+
+  padding: 53px 71px;
+
+}
+
+.button {
+  font-family: 'Staatliches';
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+
+  height: 56px;
+
+  background: #FF5374;
+  border-radius: 20px;
+
+}
+
+
+.button:hover{
+  background: #e63c5e;
+
+}
+
+
+
